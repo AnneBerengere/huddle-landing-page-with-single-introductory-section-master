@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: hsl(257, 40%, 49%);
+    height: 100vh;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.titre {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.content {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+/*Ordinateur*/
+@media only screen and (min-width: 901px){
+    body {
+        background-image: url("images/bg-desktop.svg");
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/*mobile*/
+@media only screen and (max-width: 900px){
+    body {
+        background-image: url("images/bg-mobile.svg");
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
